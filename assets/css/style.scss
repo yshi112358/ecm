@@ -1,0 +1,88 @@
+body {
+    position: relative;
+    // background-color: aqua;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    z-index: 10;
+
+    .logo {
+        left: 0px;
+    }
+
+    .menu-button {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0px;
+
+        .bar-container {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+
+            .bar-margin {
+                height: 15px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .bar {
+                    width: 30px;
+                    height: 2px;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    position: relative;
+    width: 100vw;
+    // padding-top: 60px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    .top-page {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        .top-image {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .top-slogan {
+            position: relative;
+            bottom: 30vh;
+            color: white;
+            font-size: 20px;
+        }
+
+        .top-history {
+            position: relative;
+            bottom: 20vh;
+            color: white;
+        }
+    }
+
+    .recent-page {}
+}

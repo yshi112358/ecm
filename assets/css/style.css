@@ -1,0 +1,75 @@
+body {
+  position: relative;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+header .logo {
+  left: 0px;
+}
+header .menu-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+}
+header .menu-button .bar-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+header .menu-button .bar-container .bar-margin {
+  height: 15px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu-button .bar-container .bar-margin .bar {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+}
+
+.main {
+  position: relative;
+  width: 100vw;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.main .top-page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.main .top-page .top-image {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .top-page .top-slogan {
+  position: relative;
+  bottom: 30vh;
+  color: white;
+  font-size: 20px;
+}
+.main .top-page .top-history {
+  position: relative;
+  bottom: 20vh;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
