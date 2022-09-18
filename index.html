@@ -39,11 +39,37 @@
             <a href="./register.html">入会の方はこちらから</a>
             <a href="./member.html">会員の方はこちらから</a>
         </div>
+        
+        <button id="btn-login" disabled="true" onclick="login()">Log in</button>
+        <button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
+
+        <!--ログイン後に表示-->
+        <div class="hidden" id="gated-content">
+            <p>
+                You're seeing this content because you're currently
+                <strong>logged in</strong>.
+            </p>
+            <label>
+                Access token:
+                <pre id="ipt-access-token"></pre>
+            </label>
+            <label>
+                User profile:
+                <pre id="ipt-user-profile"></pre>
+            </label>
+
+            <label>
+                User profile Image:
+                <img src="" id="ipt-user-profile-image" width="200px">
+            </label>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/animation.js"></script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.2/auth0-spa-js.production.js"></script>
+    <script src="./assets/js/login.js"></script>
 </body>
 
 </html>
