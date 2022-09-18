@@ -1,6 +1,6 @@
 'use strict';
 
-const APP_PATH = `/auth0staticsitesample`; // https://ユーザー名.github.io/<ココ> or ルートパス利用なら`/`だけでOK
+const APP_PATH = `/`; // https://ユーザー名.github.io/<ココ> or ルートパス利用なら`/`だけでOK
 let auth0 = null;
 const fetchAuthConfig = () => fetch("auth_config.json"); // auth_config.json読み込み
 
