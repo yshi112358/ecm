@@ -36,13 +36,15 @@
         <div class="recent-page">
         </div>
         <div class="login-page">
-            <a href="./register.html">入会の方はこちらから</a>
-            <a href="./member.html">会員の方はこちらから</a>
+            <button id="btn-login" disabled="true" onclick="login()">入会の方はこちらから</button>
+            <button id="btn-logout" disabled="true" onclick="logout()">会員の方はこちらから</button>
         </div>
-        
-        <button id="btn-login" disabled="true" onclick="login()">Log in</button>
-        <button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
 
+        <button id="authorize_button" style="display: none;">Authorize</button>
+        <button id="signout_button" style="display: none;">Sign Out</button>
+    
+        <pre id="content" style="white-space: pre-wrap;"></pre>
+    
         <!--ログイン後に表示-->
         <div class="hidden" id="gated-content">
             <p>
@@ -70,6 +72,10 @@
     <script src="./assets/js/animation.js"></script>
     <script src="https://cdn.auth0.com/js/auth0-spa-js/1.2/auth0-spa-js.production.js"></script>
     <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/drive.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
 </body>
 
 </html>
