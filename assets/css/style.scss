@@ -132,6 +132,8 @@ header {
             background-color: pink;
             border-radius: 25px;
             color: white;
+            position: relative;
+            overflow: hidden;
 
             .thumbnail {
                 position: relative;
@@ -143,19 +145,28 @@ header {
             }
 
             .title {
-                position: relative;
-                width: 100%;
-                bottom: 100px;
+                position: absolute;
+                bottom: 50px;
                 font-size: 40px;
                 text-align: center;
+                width: fit-content;
+                left: 10px;
+                background: linear-gradient(transparent 40%, #00000048 10%);
             }
 
             .content {
-                position: relative;
-                width: 100%;
-                bottom: 100px;
+                position: absolute;
+                width: fit-content;
+                max-width: 90%;
+                height: 30px;
+                left: 10px;
+                bottom: 20px;
                 font-size: 20px;
                 text-align: center;
+                background: linear-gradient(transparent 40%, #00000048 10%);
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow-x: hidden;
             }
         }
     }
@@ -182,6 +193,7 @@ header {
             .article-thumbnail {
                 object-fit: cover;
                 width: 500px;
+                max-width: 80vw;
                 height: 400px;
             }
 
@@ -189,7 +201,8 @@ header {
                 font-size: 30px;
                 text-align: center;
             }
-            .article-content{
+
+            .article-content {
                 white-space: pre-line;
             }
 

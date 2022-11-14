@@ -119,6 +119,8 @@ header .menu-button .bar-container .bar-margin .bar {
   background-color: pink;
   border-radius: 25px;
   color: white;
+  position: relative;
+  overflow: hidden;
 }
 .main .recent-page .article .thumbnail {
   position: relative;
@@ -130,18 +132,31 @@ header .menu-button .bar-container .bar-margin .bar {
   border-radius: 25px;
 }
 .main .recent-page .article .title {
-  position: relative;
-  width: 100%;
-  bottom: 100px;
+  position: absolute;
+  bottom: 50px;
   font-size: 40px;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 10px;
+  background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.2823529412) 10%);
 }
 .main .recent-page .article .content {
-  position: relative;
-  width: 100%;
-  bottom: 100px;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 90%;
+  height: 30px;
+  left: 10px;
+  bottom: 20px;
   font-size: 20px;
   text-align: center;
+  background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.2823529412) 10%);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
 }
 .main .article-bg {
   background-color: rgba(0, 0, 0, 0.224);
@@ -166,6 +181,7 @@ header .menu-button .bar-container .bar-margin .bar {
   -o-object-fit: cover;
      object-fit: cover;
   width: 500px;
+  max-width: 80vw;
   height: 400px;
 }
 .main .article-bg .article-detail .article-title {
