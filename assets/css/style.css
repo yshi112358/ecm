@@ -196,6 +196,7 @@ header .menu-button .bar-container .bar-margin .bar {
   width: 500px;
   max-width: 80vw;
   height: 400px;
+  max-height: 40vh;
 }
 .main .article-bg .article-detail .article-title {
   font-size: 30px;
