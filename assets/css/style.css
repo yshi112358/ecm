@@ -56,31 +56,38 @@ header .menu-button .bar-container .bar-margin .bar {
   padding-top: 120px;
   width: 100vw;
   height: 100vh;
-  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 .main .top-page .top-image {
-  width: 70vw;
-  height: 30vh;
+  width: 50vh;
+  min-width: 50vw;
+  max-width: 70vw;
+  height: 50vw;
+  min-height: 20vh;
+  max-height: 30vh;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: 10px;
   position: relative;
   border-radius: 25px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
 }
 .main .top-page .top-right {
-  right: -50px;
+  left: 5vw;
 }
 .main .top-page .top-left {
-  left: -50px;
+  right: 5vw;
 }
 .main .top-page .top-slogan-box {
   width: 100vw;
-  height: 20vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
-  top: 10px;
+  bottom: 3vh;
   background-color: palevioletred;
   display: flex;
   flex-flow: column;
@@ -89,13 +96,16 @@ header .menu-button .bar-container .bar-margin .bar {
 .main .top-page .top-slogan-box .top-slogan {
   position: relative;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
 }
 .main .top-page .top-slogan-box .top-history {
   position: relative;
   color: white;
   font-size: 20px;
+  margin: 10px 20px;
+  font-kerning: normal;
+  text-align: justify;
 }
 .main .recent-page {
   width: 100vw;
