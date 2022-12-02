@@ -166,6 +166,16 @@ header {
                 background: linear-gradient(transparent 40%, #00000048 10%);
             }
 
+            .date {
+                position: absolute;
+                top: 10px;
+                font-size: 60px;
+                text-align: center;
+                width: fit-content;
+                left: 10px;
+                // background: linear-gradient(transparent 40%, #00000048 10%);
+            }
+
             .content {
                 position: absolute;
                 width: fit-content;

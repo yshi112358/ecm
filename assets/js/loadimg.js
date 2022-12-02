@@ -16,6 +16,7 @@ d3.csv("https://docs.google.com/spreadsheets/d/1bntxqXyM38BB3iKHJ035wKEBI1gGYDBD
                 ? ("<img src='" + article[i].img.replace("https://drive.google.com/open?id=", "https://drive.google.com/uc?id=") + "' class='thumbnail'>")
                 : ("<img src='./assets/img/NoImage.png' class='thumbnail'>")
             ) +
+            "<div class='date'>" + article[i].date.split(' ')[0] + "</div>" +
             "<div class='title'>" + article[i].title + "</div>" +
             "<div class='content'>" + article[i].content + "</div>" +
             "</button>");
