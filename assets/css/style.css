@@ -199,6 +199,7 @@ header .menu-button .bar-container .bar-margin .bar {
   display: flex;
   flex-flow: column;
   align-items: center;
+  overflow-y: scroll;
 }
 .main .article-bg .article-detail .article-thumbnail {
   -o-object-fit: cover;
